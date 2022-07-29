@@ -8,12 +8,54 @@ const UserSchema = new mongoose.Schema({
   },
   Password: {
     type: String,
-    required: true,
+  required: true,
   },
-  Name: {
+
+  firstName: {
+  type: String,
+  required: true
+  },
+
+  lastName: {
+  type: String,
+  required: true
+  },
+  
+  batch: {
+  type: Number,
+  required: true
+  },
+  
+ 
+branch: {
+  type: String,
+  required: true
+},
+  
+courses: {
+  type: Array
+},
+  
+gender: {
     type: String,
-    required: true,
-  },
+    required: true
+},
+phoneNumber: {
+    type: String,
+    required: true
+},
+  
+semester: {
+  type: Number,
+  required: true
+},
+  
+  Name: {
+   type: String,
+  required: true,
+},
+
+
  
 },
 {
